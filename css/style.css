@@ -1,0 +1,139 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html, 
+body,
+p {
+    margin: 0;
+    padding: 0;
+    font-family: "Source Sans 3", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1rem;
+}
+
+/* header */
+
+header{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.top-bar{   
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-branding{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+
+.nav-links{
+    display: flex;
+    gap: 1rem;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+    list-style: none;
+    justify-content: space-around;
+}
+
+.nav-link{
+    text-decoration: none;
+}
+
+.site-logo-img{
+    margin-right: 0.5rem;
+    vertical-align: middle;
+}
+
+.site-name{
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+
+/* Hero */
+
+.hero-container {
+    background-image: url(../images/hero.jpeg);
+    background-size: cover;
+    background-position: center; /*position photo at centre*/
+    min-height: 50vh; /* make it at least half viewport height*/
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.hero-content {
+    color: whitesmoke;
+    width: 90%;
+    padding: 1.5rem 0;
+    max-width: 900px;
+}
+
+
+/* main */
+
+.main-container{
+    width: 90%;
+    max-width: 900px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.post{
+    margin-bottom: 2rem;
+}
+
+.post-preview-img{
+    width: 100%; /*make the width full width of parent*/
+    height: 200px;
+    object-fit: cover;
+    overflow: hidden;
+    margin-bottom: 0.8rem;
+}
+
+/* typography */
+
+h1 {
+    font-size: 2.441rem; /* Approx 39px */
+}
+h2 {
+    font-size: 1.953rem; /* Approx 31px */
+}
+
+h3 {
+    font-size: 1.563rem; /* Approx 25px */
+}
+
+/* utility */
+
+.debug{
+    /* border: red solid 2px; */
+}
+
+/* media queries */
+
+
+@media (min-width: 992px){
+    /* desktops, laptops*/
+    .main-container{
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 1.5rem;
+    }

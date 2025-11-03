@@ -1,0 +1,107 @@
+<!-- Requirements:
+
+• Build each page from "scratch"
+• Make all pages responsive
+• Relative units
+• Mobile-first design
+• Media queries
+• Viewport meta tag 
+
+Figma link:
+https://www.figma.com/design/0TEftC27noSmNeaJSODiYi/Learning-Journal-Blog--Copia-?node-id=0-1&p=f&t=fAgBODqkix9TeaQF-0
+
+Hints:
+https://different-marmoset-f7b.notion.site/Learning-Journal-cbe9e2728d6149e0b3efbb1f139be122
+
+TODO:
+* DONE Set up the meta tag to make responsive
+* DONESet border box sizing
+* DONE Add HTML sections
+* DONE Add hero image and text
+* DONE Get fonts
+* DONE Remove underline from nav links
+* DONE Sort out hero text
+* DONE Sort out flex for the articles
+* DONE Add text to each article
+* DONE Add images to each article
+* DONE Make mobile first (single column)
+* DONE Make grid for media query above 920px
+
+-->
+
+<html>
+    <head>
+        <title>My Learning Journal</title>
+        <link rel="stylesheet" href="css/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <!-- Get source sans google font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+    <header>
+        <div class="top-bar debug">
+            <a href="./index.html" class="site-branding">
+                <img src="../images/hedgehog-logo.png" alt="My learning journal logo" class="site-logo-img">
+                <span class="site-name debug">My learning journal</span>   
+            </a>
+            <nav>
+                <ul class="nav-links debug">
+                    <li><a href="/index.html" class="nav-link">HOME</a></li>
+                    <li><a href="/" class="nav-link">ABOUT ME</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="hero-container">
+            <div class="hero-content debug">
+                <span>JULY 23, 2022</span>
+                <h1>Blog one</h1>
+                <p>I'm excited to post my first blog. I'm going to do a new blog post
+                    every single day.</p>
+            </div>
+        </div>
+    </header>
+    <main class="main-container">
+        <article class="post debug">
+            <img class="post-preview-img" src="../images/blog-two.jpeg" alt="">
+            <span>01 October 2025<span>
+            <h2>Blog two</h2>
+            <p>This is my second blog</>
+        </article>
+        <article class="post debug">
+            <img class="post-preview-img"src="../images/blog-three.jpeg" alt="">
+            <span>01 October 2025<span>
+            <h2>Blog three</h2>
+            <p>This is my third blog</>
+        </article>
+        <article class="post debug">
+            <img class="post-preview-img" src="../images/blog-four.jpeg" alt="">
+            <span>01 October 2025<span>
+            <h2>Blog fourth</h2>
+            <p>This is my fourth blog</>
+        </article>
+        <article class="post debug">
+            <img class="post-preview-img" src="../images/blog-five.jpeg" alt="">
+            <span>01 October 2025<span>
+            <h2>Blog five</h2>
+            <p>This is my fifth blog</>
+        </article>
+        <article class="post debug">
+            <img class="post-preview-img" src="../images/blog-six.jpeg" alt="">
+            <span>01 October 2025<span>
+            <h2>Blog six</h2>
+            <p>This is my sixth blog</>
+        </article>
+        <article class="post debug">
+            <img class="post-preview-img" src="../images/blog-seven.jpeg" alt="">
+            <span>01 October 2025<span>
+            <h2>Blog seven</h2>
+            <p>This is my seventh blog</>
+        </article>
+    </main>
+    <footer>
+    </footer>
+    </body>
+</html>
